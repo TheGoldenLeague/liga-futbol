@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Panel de Administración</h1>
+    <input type="file" id="uploadJson" accept=".json">
+    <button onclick="updateData()">Actualizar Datos</button>
+
+    <script>
+        function updateData() {
+            let file = document.getElementById("uploadJson").files[0];
+            if (file) {
+                alert("Archivo subido correctamente. Actualiza la página para ver cambios.");
+            }
+        }
+    </script>
+</body>
+</html>
